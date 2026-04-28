@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shift Pocket Calendar Support</title>
+    <style>
+      :root {
+        --bg: #f5f1e8;
+        --card: rgba(255, 252, 247, 0.92);
+        --ink: #222222;
+        --muted: #5d655f;
+        --line: #d9d0c2;
+        --accent: #51624f;
+        --accent-soft: #e7ece3;
+        --shadow: 0 18px 46px rgba(34, 34, 34, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top right, rgba(200, 189, 170, 0.46), rgba(200, 189, 170, 0) 28%),
+          radial-gradient(circle at bottom left, rgba(81, 98, 79, 0.2), rgba(81, 98, 79, 0) 26%),
+          var(--bg);
+      }
+
+      main {
+        width: min(940px, calc(100% - 28px));
+        margin: 0 auto;
+        padding: 28px 0 64px;
+      }
+
+      .hero,
+      .card {
+        border-radius: 28px;
+        border: 1px solid var(--line);
+        background: var(--card);
+        box-shadow: var(--shadow);
+      }
+
+      .hero {
+        padding: 32px 28px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 16px;
+        margin-top: 16px;
+      }
+
+      .card {
+        padding: 22px 24px;
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 12px;
+        letter-spacing: -0.025em;
+      }
+
+      h1 {
+        margin-top: 18px;
+        font-size: clamp(30px, 5vw, 48px);
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      p,
+      li {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.75;
+        font-size: 16px;
+      }
+
+      ul {
+        margin: 12px 0 0;
+        padding-left: 20px;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .tag {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      a {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="tag">Shift Pocket Calendar · Support</div>
+        <h1>Shift Pocket Calendar Support</h1>
+        <p>
+          Shift Pocket Calendar helps you keep shift templates, reminders, and estimated
+          pay in one lightweight iPhone workflow.
+        </p>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>Getting Started</h2>
+          <ul>
+            <li>Create one or more shift templates in Settings or Templates.</li>
+            <li>Open Calendar or Home to add shifts for the days you need.</li>
+            <li>Use Quick Schedule or Weekly Pattern to fill repeated schedules faster.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Troubleshooting</h2>
+          <ul>
+            <li>No reminder arrived: check notification permission for Shift Pocket Calendar in iPhone Settings.</li>
+            <li>Calendar export failed: make sure calendar access is granted when you tap Export.</li>
+            <li>Hours or pay look wrong: review start time, end time, break length, and hourly rate in the shift entry.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Data Notes</h2>
+          <p>
+            The current version stores scheduling data locally on device and does not
+            require an account login for the main workflow.
+          </p>
+        </article>
+      </section>
+
+      <section class="card" style="margin-top: 16px;">
+        <h2>Contact</h2>
+        <p>
+          For support questions, contact
+          <a href="mailto:2168689151@qq.com">2168689151@qq.com</a>.
+        </p>
+        <p style="margin-top: 12px;">
+          Privacy policy:
+          <a href="./privacy-policy.html">privacy-policy.html</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
